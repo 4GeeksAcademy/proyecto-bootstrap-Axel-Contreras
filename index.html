@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Instagram Photo Feed con Bootstrap</title>
+    <style>
+        .grid-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <a class="navbar-brand" href="#">Instagram</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <a type="button" class="btn btn-success">Create new post</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a type="button" class="btn btn-secondary nav-item dropdown-toggle" href="#"
+                            id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <a class="dropdown-item text-danger" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container d-grid gap-6 col-2 mx-auto m-1 p-1">
+        <div class="btn-group align-items-center d-flex" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn" id="grid-box">
+                <i class="fa-solid fa-table-cells"></i>
+            </button>
+            <button type="button" class="btn" id="grid-1">
+                <i class="fa-regular fa-square"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-mike-kutz-2029764819-29124314.jpg" alt="he wants to scare me"
+                        class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-miami302-34468507.jpg" alt="Todo es mejor entre arboles" class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-megan-ruth-192440753-16642700.jpg" alt="always autumn" class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-megan-ruth-192440753-11911105.jpg" alt="Nothingt" class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-malama-mushitu-2148898721-34280878.jpg" alt="What are you doing?"
+                        class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-luna-joie-3299599-34519661.jpg" alt="Nice coffee" class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-emre-mavi-760830358-34506362.jpg" alt="My friends swimming"
+                        class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <img src="img.free/pexels-edwinarielmusic-2372007.jpg" alt="Siempre volver a casa" class="grid-img">
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div>
+                    <video src="img.free/12987469_1920_1080_60fps.mp4" alt="Esperando al repartidor" class="grid-img"
+                        controls>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b6764bb5f9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
