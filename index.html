@@ -17,36 +17,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
             <div>
                 <i class="fa-brands fa-instagram"></i>
                 <a class="navbar-brand" href="#">Instagram</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
             <div>
-                <ul class="navbar-nav align-items-center">
+                <ul class="navbar-nav d-flex flex-wrap justify-content-between align-items-center gap-2">
                     <li class="nav-item active" id="createnewpost">
-                        <a type="button" class="btn btn-success">Create new post</a>
-                        <!-- <a type="button" class="btn btn-success nav-item dropdown-toggle" href="#" id="newpost"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create new post</a>
-                        <div class="dropdown" aria-labelledby="newpost">
-                            <h5 class="card-header">Create a new post <a type="button" class="btn-close"
-                                    aria-label="Close"></a></h5>
-                                <p class="card-text">Add the caption of your post here.</p>
-                            <div class="d-espace-between">
-                                <a href="#" class="btn btn-secondary">Close</a>
-                                <a href="#" class="btn btn-success">Publish</a>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#createnewpostModal">
+                            Create new post
+                        </button>
+                        <div class="modal fade" id="createnewpostModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Create a new post</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Add the caption here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <i class="fa-solid fa-camera"></i>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Publish</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>-->
-
-
-
-
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a type="button" class="btn btn-secondary nav-item dropdown-toggle" href="#"
